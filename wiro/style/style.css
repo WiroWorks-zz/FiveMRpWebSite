@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    height: 132vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    background: url(background.png) top center no-repeat #0f0f0f;
+    background-size: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#middle {
+    width: 60%;
+    height: 35%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+#top {
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-family: rowdies,cursive;
+}
+
+.menu-logo {
+    width: 100px;
+}
+
+.yonlen {
+    background-color: transparent !important;
+    border: transparent !important;
+    outline: transparent !important;
+}
+
+.menu-li {
+    padding: 16px 0 5px;
+    margin: 0 25px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Audiowide', cursive;
+    position: relative;
+}
+
+.menu-li:hover {
+   color: rgb(228, 109, 30);
+   transition: .7s;
+}
+
+.menu-li:hover > a {
+    color: rgb(228, 109, 30);
+    transition: .7s;
+}
+
+.menu-li:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: transform 250ms;
+}
+
+.menu-li:hover:after {
+    transform: translateX(-50%) scaleX(1);
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 5px;
+  }
+  
+  
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    padding: 0;
+    margin-top: 15px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {   color: rgb(228, 109, 30);}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.dropbtn2 {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 5px;
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content2 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    padding: 0;
+    margin-top: 15px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content2 a:hover {   color: rgb(228, 109, 30);}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#footer {
+    width: 100%;
+    height: auto;
+    background: url(footer-background.png);
+    background-size: cover;
+    min-height: 450px;
+}
+
+#bilgi {
+    margin-top: 150px;
+    width: 60%;
+    height: 30%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#bilgisag {
+    width: 60%;
+    height: 45%;
+    display: inline-flex;
+}
+
+.wiro-btn {
+    display: inline-flex;
+    width: 254px;
+    height: 54px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Rowdies', cursive;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.fa-discord {
+    color: black;
+    font-size: 40px;
+}
+
+.giriskayit {
+    width: 60%;
+    height: 50%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 15 !important;
+}
+
+#kayitform  {
+    display: inline-flex;
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 50px;
+    border: rgb(88, 88, 88) 1px solid;
+    border-radius: 10px;
+    background-color: black;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+
+h3 {
+    color: #ffa200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
+.ustit {
+    margin-top: 20px;
+    color: #ffa200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wiro-txt {
+    width: 70%;
+    height: 40px;
+    color: white;
+    background-color: transparent;
+    border: rgb(88, 88, 88) 1px solid;
+    outline: none;
+    border-radius: 5px;    
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.onaylabtn {
+    width: 35%;
+    height: 5vh;
+    color: black;
+    background-color:#ffa200;
+    border-radius: 15px;
+    border: 2px black solid;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 300ms;
+}
+
+.onaylabtn:hover {
+    background-color: #ca8206;
+}
+
+.basvuru-main {
+    width: 60%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basvuru-form {
+    width: 80%;
+    margin: 0;
+    position: relative;
+}
+
+.basvuru-p {
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #ffa200;
+    text-align: center;
+}
+
+.basvuru-div-50 {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.basvuru-div-100 {
+    width: 87.6%;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.basvuru-txt {
+    margin-top: 6px;
+    width: 400px;
+    height: 40px;
+    background: #000;
+    color: #677079;
+    border: 1px solid #272727;
+    border-radius: 7px;
+    outline: none;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.basvuru-txt-100 {
+    width: 100%;
+    min-height: 100px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+    border-radius: 5;
+}

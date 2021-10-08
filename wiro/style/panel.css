@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(13, 17, 35);
+}
+
+select {
+    color: black;
+}
+
+option {
+    color: black;
+}
+
+button {
+    color: black;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+#solbar {
+    float: left;
+    width: 270px;
+    min-height: 350vh;
+    height: auto !important;
+    background-color: rgb(20, 26, 53);
+    box-shadow: 5px 0 5px -5px rgb(25, 29, 59 / 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.solbtn {
+    width: 100%;
+    height: 65px;
+    font-size: 25px;
+    background-color: rgb(20, 26, 53);
+    border: none;
+    outline: none;
+    color: white;
+    margin-top: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+.solbtn:hover {
+    background-color: rgb(26, 33, 66);
+}
+
+#sagbolum {
+    width: 85%;
+    height: auto;
+    min-height: 100vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.list-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    color: white;
+}
+  
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+
+tr:nth-child(even) {
+background-color: rgb(28, 37, 75);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(37, 48, 97);
+}
+
+tr:first-child {
+    background-color: rgb(27, 41, 100);
+}
+
+td a:link {
+color: rgb(124, 112, 194);
+background-color: transparent;
+}
+
+td a:visited {
+color: rgb(152, 113, 243);
+background-color: transparent;
+}
+
+td a:hover {
+color: rgb(135, 46, 250);
+background-color: transparent;
+}
+
+td a:active {
+color: yellow;
+background-color: transparent;
+}
+
+.basvuru-form-panel {
+    width: 70%;
+    height: auto;
+    background-color: #0f0f0f3b;
+    border: 1px #272727 solid;
+    border-radius: 10px;
+    color: white;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 100px;
+    flex-direction: column;
+}
+
+.soru {
+    color:  #ffa200;
+    word-wrap: break-word;
+}
+
+.cevap {
+    color: #72777c;
+    word-wrap: break-word;
+}
+
+.onaylabtn {
+    width: 10%;
+    height: 5vh;
+    color: black;
+    background-color: #30ca54;
+    border-radius: 15px;
+    border: 2px black solid;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 300ms;
+}
+
+.onaylabtn:hover {
+    background-color: #28a745;
+}
+
+.redbtn {
+    width: 10%;
+    height: 5vh;
+    color: black;
+    background-color: #dc3545;
+    border-radius: 15px;
+    border: 2px black solid;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 300ms;
+}
+
+.redbtn:hover {
+    background-color: #a32733;
+}
+
+#mainpanel {
+    width: 74%;
+    height: 100vh;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.panel-div {
+    width: 350px;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.panel-div-txtb {
+    width: 200px;
+    height: 30px;
+    color: black;
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.panel-div-select > *  {
+    color: black;
+}
+
+.panel-div-select  {
+    color: black;
+    margin-top: 10px;
+}
+
+.panel-div-button {
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.041);
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    transition: all 200ms;
+}
+
+.panel-div-button:hover {
+    background-color: rgba(255, 255, 255, 0.151);
+}
+
+@media screen and (max-width: 1500px) {
+    #solbar {
+        width: 100%;
+        min-height: 12vh;
+        height: auto !important;
+        background-color: rgb(20, 26, 53);
+        box-shadow: 5px 0 5px -5px rgb(25, 29, 59 / 25%);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .solbtn {
+        margin-top: 30px !important;
+    }
+}
